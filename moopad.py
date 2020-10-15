@@ -246,7 +246,7 @@ if __name__ == "__main__":
 
     config_file = args.config_file
     if args.changes_as_file is not None:
-        with open(args.changes_as_files) as f:
+        with open(args.changes_as_file) as f:
             changed_files = [line.strip() for line in f if len(line) > 0]
     elif args.changes_as_string is not None:
         changed_files = [line.strip() for line in args.changes_as_string.splitlines()]
